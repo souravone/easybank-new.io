@@ -1,0 +1,35 @@
+:root {
+  --color-dark-blue: hsl(233, 26%, 24%);
+  --color-lime-green: hsl(136, 65%, 51%);
+  --color-bright-cyan: hsl(192, 70%, 51%);
+  --color-grayish-blue: hsl(233, 8%, 62%);
+  --color-light-grayish-blue: hsl(220, 16%, 96%);
+  --color-very-light-gray: hsl(0, 0%, 98%);
+  --color-white: hsl(0, 0%, 100%);
+  --body-font: cR(18px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+  background-color: palegreen;
+  overflow-x: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
