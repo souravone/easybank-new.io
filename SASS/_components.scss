@@ -91,10 +91,12 @@
 
     &::before {
       transform: translateY(-8px) rotate(0);
+      transition: all 0.4s;
     }
 
     &::after {
       transform: translateY((5px)) rotate(0);
+      transition: all 0.4s;
     }
   }
   &__items {
@@ -131,14 +133,23 @@
 }
 
 .hamburger {
+  &__container {
+    cursor: pointer;
+  }
+  &__hidden {
+    display: none;
+  }
   &__active {
     height: 0;
+
     &::before {
       transform: translateY(2px) rotate(45deg);
+      transition: all 0.4s;
     }
 
     &::after {
-      transform: translateY(0) rotate(135deg);
+      transform: translateY(0) rotate(-45deg);
+      transition: all 0.4s;
     }
   }
   &__hidden {
@@ -433,5 +444,61 @@
   }
   .paragraph {
     font-size: 16px;
+  }
+}
+
+.container {
+  transition: all 0.4s;
+  &__menu__active {
+    filter: blur(4px);
+  }
+}
+
+.mobile__navigation__hidden {
+  display: none;
+}
+.mobile__nav {
+  position: absolute;
+  z-index: 100;
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 25px 15px 25px 15px;
+  width: 80%;
+  border-radius: 10px;
+  left: 40px;
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__item {
+    font-size: 16px;
+    list-style: none;
+    position: relative;
+
+    &::before {
+      content: " ";
+      position: absolute;
+      height: cR(2px);
+      width: 100%;
+      bottom: cR(-2px);
+      transform: scaleX(0);
+      background-color: var(--color-lime-green);
+      transition: all 0.4s;
+    }
+
+    &:hover::before {
+      transform: scaleX(1.1);
+    }
+
+    & a:link,
+    & a:visited {
+      text-decoration: none;
+      color: var(--color-grayish-blue);
+    }
   }
 }

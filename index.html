@@ -18,14 +18,16 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./CSS/style.css" />
-
+    <script defer src="./script.js"></script>
     <title>Frontend Mentor | Easybank landing page</title>
   </head>
   <body>
     <header>
       <nav class="header__nav">
         <img src="./images/logo.svg" alt="logo" class="header__nav__logo" />
-        <btn class="header__nav__hamburger hamburger__hidden"></btn>
+        <div class="hamburger__container">
+          <btn class="header__nav__hamburger hamburger__hidden"></btn>
+        </div>
         <ul class="header__nav__items">
           <li class="header__nav__item">
             <a href="#">Home</a>
@@ -44,6 +46,25 @@
           </li>
         </ul>
         <a href="#" class="btn btn--header">Request Invite</a>
+      </nav>
+      <nav class="mobile__navigation mobile__navigation__hidden">
+        <ul class="mobile__nav__items">
+          <li class="mobile__nav__item">
+            <a href="#">Home</a>
+          </li>
+          <li class="mobile__nav__item">
+            <a href="#">About</a>
+          </li>
+          <li class="mobile__nav__item">
+            <a href="#">Contact</a>
+          </li>
+          <li class="mobile__nav__item">
+            <a href="#">Blog</a>
+          </li>
+          <li class="mobile__nav__item">
+            <a href="#">Careers</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <main class="container">
