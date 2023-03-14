@@ -1,7 +1,5 @@
 "use strict";
 
-console.log("yo");
-
 const hamburger = document.querySelector(".hamburger__container");
 const menu = document.querySelector(".header__nav__hamburger");
 const container = document.querySelector(".container");
